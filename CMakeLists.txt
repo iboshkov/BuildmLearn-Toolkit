@@ -435,6 +435,14 @@ set(APP_SOURCES
   src/templates/flashcard/flashcardquestion.cpp
   src/templates/flashcard/flashcarditem.cpp
 
+  src/templates/videocollection/videocollectionentrypoint.cpp
+  src/templates/videocollection/videocollectioncore.cpp
+  src/templates/videocollection/videocollectioneditor.cpp
+  src/templates/videocollection/videocollectionsimulator.cpp
+  src/templates/videocollection/videocollectionvideo.cpp
+  src/templates/videocollection/videocollectionitem.cpp
+  src/templates/videocollection/videocollectiontopic.cpp
+
   src/templates/mlearning/basicmlearningentrypoint.cpp
   src/templates/mlearning/basicmlearningcore.cpp
   src/templates/mlearning/basicmlearningeditor.cpp
@@ -505,6 +513,13 @@ set(APP_HEADERS
   src/templates/flashcard/flashcardsimulator.h
   src/templates/flashcard/flashcarditem.h
 
+  src/templates/videocollection/videocollectionentrypoint.h
+  src/templates/videocollection/videocollectioncore.h
+  src/templates/videocollection/videocollectioneditor.h
+  src/templates/videocollection/videocollectionsimulator.h
+  src/templates/videocollection/videocollectionitem.h
+  src/templates/videocollection/videocollectiontopic.h
+
   src/templates/mlearning/basicmlearningentrypoint.h
   src/templates/mlearning/basicmlearningcore.h
   src/templates/mlearning/basicmlearningeditor.h
@@ -534,6 +549,10 @@ set(APP_FORMS
   src/templates/flashcard/flashcardeditor.ui
   src/templates/flashcard/flashcardsimulator.ui
   src/templates/flashcard/flashcarditem.ui
+
+  src/templates/videocollection/videocollectioneditor.ui
+  src/templates/videocollection/videocollectionsimulator.ui
+  src/templates/videocollection/videocollectionitem.ui
 
   src/templates/mlearning/basicmlearningsimulator.ui
   src/templates/mlearning/basicmlearningeditor.ui
@@ -648,6 +667,8 @@ if(${USE_QT_5})
     Network
     Xml
     Multimedia
+    WebKit
+    WebKitWidgets
   )
 # Setup compilation for Qt 4.
 else(${USE_QT_5})

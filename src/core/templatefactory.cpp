@@ -41,6 +41,7 @@
 #include "templates/flashcard/flashcardentrypoint.h"
 #include "templates/mlearning/basicmlearningentrypoint.h"
 #include "templates/learnspellings/learnspellingsentrypoint.h"
+#include "templates/videocollection/videocollectionentrypoint.h"
 
 #if QT_VERSION >= 0x050000
 #include <QStandardPaths>
@@ -313,6 +314,9 @@ void TemplateFactory::setupTemplates() {
 
   TemplateEntryPoint *learnspellings_entry = new LearnSpellingsEntryPoint(this);
   m_availableTemplates.insert(learnspellings_entry->typeIndentifier(), learnspellings_entry);
+
+  TemplateEntryPoint *videocollection_entry = new VideoCollectionEntryPoint(this);
+  m_availableTemplates.insert(videocollection_entry->typeIndentifier(), videocollection_entry);
 }
 
 TemplateGenerator *TemplateFactory::generator() const {
